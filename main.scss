@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #ce99ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-div{
+    width: 550px;
+    background:#fff;
+    border-radius:5px;
+    padding: 2rem;
+}
+
+.search-div{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    input{
+        width: 70%;
+        border:none;
+        border-bottom:2px solid #ce99ff;
+        padding-left: 10px;
+
+        &:focus{
+            border:none;
+            border-bottom:2px solid #ce99ff;
+            outline:none;
+        }
+    }
+
+
+    button{
+        width: 25%;
+        height: 40px;
+        cursor:pointer;
+        background: #ce99ff;
+        color:#fff;
+        border:none;
+        outline:none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+}
+
+.result{
+    margin-top: 30px;
+    padding: 1%;
+}
+
+.word{
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        outline:none;
+        border:none;
+        cursor: pointer;
+        background-color: #fff;
+        color:#ce99ff;
+        font-size: 1.2rem;
+
+    }
+}
+
+.details{
+    display: flex;
+    gap:10px;
+    margin: 5px 0 15px 0;
+    color:#ce99ff;
+}
+
+.word-meaning{
+    color:#dab3ff;
+}
+
+.word-example{
+    border-left: 5px solid #ce99ff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error{
+    text-align: center;
+}
